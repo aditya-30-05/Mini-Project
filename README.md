@@ -79,24 +79,7 @@ Applet Code
             resultField.setText(String.valueOf(result));
 
             
-    public void actionPerformed(ActionEvent e) {
-        try {
-            double num1 = Double.parseDouble(num1Field.getText());
-            double num2 = Double.parseDouble(num2Field.getText());
-            double result = 0;
-
-            if (e.getSource() == addButton) {
-                result = num1 + num2;
-            } else if (e.getSource() == subButton) {
-                result = num1 - num2;
-            } else if (e.getSource() == mulButton) {
-                result = num1 * num2;
-            } else if (e.getSource() == divButton) {
-                if (num2 == 0) {
-                    resultField.setText("Error: Divide by zero");
-                    return;
-                }
-                result = num1 / num2;
+  
     
 
 
